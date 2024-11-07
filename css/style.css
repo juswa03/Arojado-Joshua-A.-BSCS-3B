@@ -1,0 +1,47 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: #222;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/header-logo.avif');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menu Section */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Order Section */
+.btn-warning {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.btn-warning:hover {
+    background-color: #e68900;
+    border-color: #e68900;
+}
+
