@@ -19,28 +19,6 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
-    <style>
-      #poster {
-        text-align: center;
-        padding: 40px 0;
-      }
-
-      #poster h2 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-      }
-
-      #poster p {
-        font-size: 1.2rem;
-        color: #555;
-        margin-bottom: 20px;
-      }
-
-      #poster img {
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
   <body>
     <!-- Header Section -->
@@ -101,18 +79,56 @@
       class="container py-5 text-center"
       style="background-color: #f8f9fa"
     >
-      <h2 class="mb-4">Watch Our Promo Video</h2>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/S_vuI6HYbDE?si=IC1rwFNjK8UNNbJ_"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+      <!-- Button that triggers the modal -->
+      <button class="btn btn-primary" id="openModalBtn">
+        Watch Our Promo Video
+      </button>
+
+      <!-- Modal Structure -->
+      <div
+        class="modal fade"
+        id="promoModal"
+        tabindex="-1"
+        aria-labelledby="promoModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="promoModalLabel">Promo Video</h5>
+              <button
+                type="button"
+                class="close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- Embed your promo video here, example with YouTube -->
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/S_vuI6HYbDE?si=Rokt_mNLwQe6iOsL"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -304,5 +320,17 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <script>
+      // Initialize the modal via JavaScript
+      const openModalBtn = document.getElementById("openModalBtn");
+      const promoModal = new bootstrap.Modal(
+        document.getElementById("promoModal")
+      );
+
+      // When the button is clicked, show the modal
+      openModalBtn.addEventListener("click", function () {
+        promoModal.show();
+      });
+    </script>
   </body>
 </html>
