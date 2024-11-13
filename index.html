@@ -7,14 +7,43 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       rel="shortcut icon"
       href="images/JOSHUA_LOGO.png"
       type="image/x-icon"
     />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #poster {
+        text-align: center;
+        padding: 40px 0;
+      }
 
-    <link rel="stylesheet" href="css/index.css" />
+      #poster h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      #poster p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      #poster img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
   </head>
   <body>
+    <!-- Header Section -->
     <header class="bg-dark text-white">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -41,10 +70,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="https://unitedcompany01.github.io/landing-site/profiles/joshua.html">Back to Previous Page</a>
+                <a
+                  class="nav-link"
+                  href="https://unitedcompany01.github.io/landing-site/profiles/joshua.html"
+                  >Back to previous page</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="https://unitedcompany01.github.io/landing-site/?fbclid=IwY2xjawGavj1leHRuA2FlbQIxMAABHTxUS37POtQ1coy9yclp4yjaB8POJhwY3AdAA64O-ijMI4f-vwGj6Nb9fA_aem_W-uh6ckKKTL7YhIXaRo9HA">Home</a>
+                <a
+                  class="nav-link"
+                  href="https://unitedcompany01.github.io/landing-site/?fbclid=IwY2xjawGavj1leHRuA2FlbQIxMAABHTxUS37POtQ1coy9yclp4yjaB8POJhwY3AdAA64O-ijMI4f-vwGj6Nb9fA_aem_W-uh6ckKKTL7YhIXaRo9HA"
+                  >Home</a
+                >
               </li>
             </ul>
           </div>
@@ -52,20 +89,59 @@
       </nav>
     </header>
 
-    <section id="home" class="hero bg-info text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4">Welcome to Crispy King</h1>
-        <p class="lead">Delicious Fried Chicken, Made Fresh Just for You!</p>
-        <a
-          href="#"
-          class="btn btn-warning btn-lg"
-          data-bs-toggle="modal"
-          data-bs-target="#orderModal"
-          >Order Now</a
-        >
+    <section id="poster" class="container py-5 text-center">
+      <h2>Welcome to Crispy King!</h2>
+      <p>Delicious Fried Chicken, Made Fresh Just for You!</p>
+      <img src="images/poster.jpg" alt="Food Style Poster" />
+    </section>
+
+    <!-- Promotional Video Section -->
+    <section
+      id="promo-video"
+      class="container py-5 text-center"
+      style="background-color: #f8f9fa"
+    >
+      <h2 class="mb-4">Watch Our Promo Video</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/S_vuI6HYbDE?si=IC1rwFNjK8UNNbJ_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
+    <!-- Mission and Vision Section -->
+    <section
+      id="mission-vision"
+      class="container py-5 text-center"
+      style="background-color: #f1f1f1"
+    >
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Our Mission</h3>
+          <p>
+            At Crispy King, we strive to deliver the best fried chicken to our
+            customers using only the freshest ingredients and a recipe passed
+            down for generations.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h3>Our Vision</h3>
+          <p>
+            To become the leading fried chicken brand, offering an unparalleled
+            dining experience with every bite.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
     <section id="menu" class="container py-5">
       <h2 class="text-center mb-4">Menu</h2>
       <div class="row">
@@ -82,13 +158,6 @@
                 Perfectly crispy fried wings, served with your choice of dipping
                 sauce.
               </p>
-              <a
-                href="#order"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#orderModal"
-                >Order Now</a
-              >
             </div>
           </div>
         </div>
@@ -105,13 +174,6 @@
                 A bucket of our famous fried chicken, perfect for sharing with
                 friends and family.
               </p>
-              <a
-                href="#order"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#orderModal"
-                >Order Now</a
-              >
             </div>
           </div>
         </div>
@@ -128,19 +190,13 @@
                 Juicy and tender fried chicken strips, ideal for a quick snack
                 or meal.
               </p>
-              <a
-                href="#order"
-                class="btn btn-primary"
-                data-bs-toggle="modal"
-                data-bs-target="#orderModal"
-                >Order Now</a
-              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section id="testimonials" class="bg-light py-5">
       <div class="container text-center">
         <h2 class="mb-4">What Our Customers Say</h2>
@@ -167,6 +223,7 @@
       </div>
     </section>
 
+    <!-- Order Section -->
     <section id="order" class="container py-5">
       <h2 class="text-center mb-4">Order Online</h2>
       <p class="text-center mb-4">
@@ -175,17 +232,11 @@
         door!
       </p>
       <div class="d-flex justify-content-center">
-        <a
-          href="#"
-          target="_blank"
-          class="btn btn-warning btn-lg"
-          data-bs-toggle="modal"
-          data-bs-target="#orderModal"
-          >Order Now</a
-        >
+        <button class="btn btn-warning">Order Now</button>
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="bg-dark text-white py-5">
       <div class="container text-center">
         <h2 class="mb-4">About Crispy King</h2>
@@ -198,6 +249,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="container py-5">
       <h2 class="text-center mb-4">Contact Us</h2>
       <div class="row">
@@ -207,54 +259,50 @@
         </div>
         <div class="col-md-6">
           <h5>Contact Info</h5>
-          <p>Email: crispyking@email.com</p>
-          <p>Phone: +639876543210</p>
+          <p>
+            <a href="mailto:arojadojoshua27@gmail.com" class="text-dark">
+              <i
+                style="background-color: black; color: white"
+                class="fa fa-envelope"
+                style="font-size: 36px"
+              ></i
+              >Email: arojadojoshua27@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:+639368414081" class="text-dark"
+              ><i
+                style="background-color: red"
+                class="fa fa-phone"
+                style="font-size: 36px"
+              ></i
+              >Phone: 0936 841 4081</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.facebook.com/03.sarsosa.roxan.juanes"
+              class="fa fa-facebook"
+              target="_blank"
+            >
+            </a>
+            <a
+              class="text-dark"
+              href="https://www.facebook.com/03.sarsosa.roxan.juanes"
+              >Facebook</a
+            >
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="bg-dark text-white text-center py-4">
       <p>&copy; 2024 Crispy King | All Rights Reserved</p>
     </footer>
 
-    <div
-      class="modal fade"
-      id="orderModal"
-      tabindex="-1"
-      aria-labelledby="orderModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="orderModalLabel">Order Confirmation</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            This website is made for educational purposes only. Thank you for
-            clicking!
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
     <script src="js/index.js"></script>
   </body>
 </html>
